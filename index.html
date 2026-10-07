@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tecnología para seguridad, domótica y conectividad. Compra online con despacho a todo Chile." />
+  <meta name="theme-color" content="#0a0c10" />
+  <title>SmartStore — Seguridad, Domótica y Tecnología</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="announcement">Envío gratis sobre $99.990 <span>•</span> Compra segura <span>•</span> Soporte técnico</div>
+  <header class="header">
+    <div class="container header-main">
+      <a class="brand" href="#inicio" aria-label="SmartStore inicio"><span class="brand-mark">S</span><span>SMART<span>STORE</span></span></a>
+      <form class="search" id="searchForm">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="Busca cámaras, sensores, cerraduras..." autocomplete="off" />
+        <button type="submit">Buscar</button>
+      </form>
+      <nav class="header-actions" aria-label="Acciones">
+        <button class="icon-btn" id="accountBtn" title="Mi cuenta">◎</button>
+        <button class="icon-btn" id="wishlistBtn" title="Favoritos">♡<span class="count" id="wishlistCount">0</span></button>
+        <button class="cart-button" id="cartBtn"><span>Carrito</span><strong id="cartCount">0</strong></button>
+      </nav>
+    </div>
+    <div class="container nav-row">
+      <button class="categories-trigger" id="categoriesBtn">☰ Todas las categorías</button>
+      <a href="#ofertas">Ofertas</a><a href="#productos">Más vendidos</a><a href="#novedades">Novedades</a><a href="#empresas">Venta empresas</a><a href="#soporte">Soporte técnico</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">TECNOLOGÍA QUE PROTEGE Y SIMPLIFICA</span>
+          <h1>Tu hogar y negocio,<br><em>más inteligente.</em></h1>
+          <p>Cámaras, domótica, redes y seguridad con despacho rápido, garantía y soporte técnico especializado.</p>
+          <div class="hero-actions"><a class="btn primary" href="#productos">Ver productos</a><a class="btn ghost" href="#asesoria">Quiero asesoría →</a></div>
+          <div class="trust-row"><span>✓ Compra protegida</span><span>✓ Garantía</span><span>✓ Boleta / factura</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span class="live-dot"></span><span class="hero-card-kicker">SEGURIDAD 24/7</span>
+            <h2>Controla todo desde tu teléfono</h2>
+            <div class="device-preview">
+              <div class="camera-lens"><span></span></div>
+              <div class="signal signal-a"></div><div class="signal signal-b"></div>
+            </div>
+            <div class="mini-stats"><div><strong>2K</strong><small>Video</small></div><div><strong>AI</strong><small>Detección</small></div><div><strong>24/7</strong><small>Control</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits"><div class="container benefits-grid">
+      <div><b>🚚</b><span><strong>Despacho a todo Chile</strong><small>Seguimiento de tu pedido</small></span></div>
+      <div><b>🔒</b><span><strong>Pago 100% seguro</strong><small>Compra con tranquilidad</small></span></div>
+      <div><b>⚙</b><span><strong>Soporte especializado</strong><small>Te ayudamos a elegir</small></span></div>
+      <div><b>↻</b><span><strong>Cambios simples</strong><small>Política clara y rápida</small></span></div>
+    </div></section>
+
+    <section class="section" id="categorias"><div class="container">
+      <div class="section-head"><div><span class="eyebrow dark">COMPRA POR CATEGORÍA</span><h2>Todo para conectar y proteger</h2></div><a href="#productos">Ver todo →</a></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </div></section>
+
+    <section class="section soft" id="productos"><div class="container">
+      <div class="section-head"><div><span class="eyebrow dark">DESTACADOS</span><h2>Los favoritos de nuestros clientes</h2></div><div class="product-toolbar"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="camaras">Cámaras</button><button class="filter" data-filter="domotica">Domótica</button><button class="filter" data-filter="acceso">Acceso</button></div></div>
+      <div id="searchStatus" class="search-status" hidden></div>
+      <div class="product-grid" id="productGrid"></div>
+    </div></section>
+
+    <section class="section" id="asesoria"><div class="container advisory">
+      <div><span class="eyebrow">¿NO SABES QUÉ NECESITAS?</span><h2>Armamos la solución contigo.</h2><p>Cuéntanos qué quieres proteger o automatizar y te ayudamos a elegir productos compatibles, sin comprar de más.</p></div>
+      <form id="advisoryForm"><input required placeholder="Tu nombre" /><input required type="tel" placeholder="WhatsApp" /><select><option>Quiero instalar cámaras</option><option>Quiero automatizar mi hogar</option><option>Necesito control de acceso</option><option>Necesito mejorar mi red</option></select><button class="btn light" type="submit">Solicitar asesoría</button></form>
+    </div></section>
+
+    <section class="section" id="empresas"><div class="container company-banner"><div><span>VENTA EMPRESAS</span><h2>Proyectos, instaladores y compras por volumen</h2><p>Precios especiales, facturación y atención comercial para negocios e instaladores.</p></div><button class="btn primary" id="businessBtn">Cotizar proyecto</button></div></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand inverted" href="#inicio"><span class="brand-mark">S</span><span>SMART<span>STORE</span></span></a><p>Tecnología útil, soporte real y compra simple.</p></div><div><strong>Tienda</strong><a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#ofertas">Ofertas</a></div><div><strong>Ayuda</strong><a href="#soporte">Centro de ayuda</a><a href="#envios">Despachos</a><a href="#cambios">Cambios y garantía</a></div><div><strong>Newsletter</strong><p>Ofertas y lanzamientos, sin spam.</p><form id="newsletterForm" class="newsletter"><input type="email" required placeholder="tu@email.cl"/><button>→</button></form></div></div><div class="container footer-bottom"><span>© 2026 SmartStore. Marca temporal.</span><span>Chile · CLP</span></div></footer>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><div><small>TU COMPRA</small><h3>Carrito</h3></div><button class="close-btn" data-close="cartDrawer">×</button></div><div class="drawer-body" id="cartItems"></div><div class="drawer-footer" id="cartFooter"></div></aside>
+  <aside class="drawer left" id="categoryDrawer" aria-hidden="true"><div class="drawer-head"><div><small>EXPLORAR</small><h3>Categorías</h3></div><button class="close-btn" data-close="categoryDrawer">×</button></div><div class="drawer-body" id="categoryMenu"></div></aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="modal" id="productModal" aria-hidden="true"><div class="modal-card"><button class="close-btn modal-close" data-close="productModal">×</button><div id="modalContent"></div></div></div>
+  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
