@@ -1,95 +1,38 @@
 <!doctype html>
 <html lang="es-CL">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tecnología para seguridad, domótica y conectividad. Compra online con despacho a todo Chile." />
-  <meta name="theme-color" content="#0a0c10" />
-  <title>SmartStore — Seguridad, Domótica y Tecnología</title>
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora cámaras EZVIZ, Tapo y domótica para instalar en casa. Compara requisitos, energía, Wi-Fi y accesorios antes de elegir.">
+  <meta name="theme-color" content="#0a0c10"><meta name="robots" content="noindex,nofollow">
+  <title>SmartStore — Cámaras EZVIZ y hogar inteligente</title>
+  <link rel="preconnect" href="https://mfs.ezvizlife.com"><link rel="preconnect" href="https://static.tp-link.com">
+  <link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="./catalog.css?v=0.2.0">
 </head>
 <body>
-  <div class="announcement">Envío gratis sobre $99.990 <span>•</span> Compra segura <span>•</span> Soporte técnico</div>
-  <header class="header">
-    <div class="container header-main">
-      <a class="brand" href="#inicio" aria-label="SmartStore inicio"><span class="brand-mark">S</span><span>SMART<span>STORE</span></span></a>
-      <form class="search" id="searchForm">
-        <span aria-hidden="true">⌕</span>
-        <input id="searchInput" type="search" placeholder="Busca cámaras, sensores, cerraduras..." autocomplete="off" />
-        <button type="submit">Buscar</button>
-      </form>
-      <nav class="header-actions" aria-label="Acciones">
-        <button class="icon-btn" id="accountBtn" title="Mi cuenta">◎</button>
-        <button class="icon-btn" id="wishlistBtn" title="Favoritos">♡<span class="count" id="wishlistCount">0</span></button>
-        <button class="cart-button" id="cartBtn"><span>Carrito</span><strong id="cartCount">0</strong></button>
-      </nav>
-    </div>
-    <div class="container nav-row">
-      <button class="categories-trigger" id="categoriesBtn">☰ Todas las categorías</button>
-      <a href="#ofertas">Ofertas</a><a href="#productos">Más vendidos</a><a href="#novedades">Novedades</a><a href="#empresas">Venta empresas</a><a href="#soporte">Soporte técnico</a>
-    </div>
-  </header>
-
-  <main id="inicio">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">TECNOLOGÍA QUE PROTEGE Y SIMPLIFICA</span>
-          <h1>Tu hogar y negocio,<br><em>más inteligente.</em></h1>
-          <p>Cámaras, domótica, redes y seguridad con despacho rápido, garantía y soporte técnico especializado.</p>
-          <div class="hero-actions"><a class="btn primary" href="#productos">Ver productos</a><a class="btn ghost" href="#asesoria">Quiero asesoría →</a></div>
-          <div class="trust-row"><span>✓ Compra protegida</span><span>✓ Garantía</span><span>✓ Boleta / factura</span></div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-card">
-            <span class="live-dot"></span><span class="hero-card-kicker">SEGURIDAD 24/7</span>
-            <h2>Controla todo desde tu teléfono</h2>
-            <div class="device-preview">
-              <div class="camera-lens"><span></span></div>
-              <div class="signal signal-a"></div><div class="signal signal-b"></div>
-            </div>
-            <div class="mini-stats"><div><strong>2K</strong><small>Video</small></div><div><strong>AI</strong><small>Detección</small></div><div><strong>24/7</strong><small>Control</small></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="benefits"><div class="container benefits-grid">
-      <div><b>🚚</b><span><strong>Despacho a todo Chile</strong><small>Seguimiento de tu pedido</small></span></div>
-      <div><b>🔒</b><span><strong>Pago 100% seguro</strong><small>Compra con tranquilidad</small></span></div>
-      <div><b>⚙</b><span><strong>Soporte especializado</strong><small>Te ayudamos a elegir</small></span></div>
-      <div><b>↻</b><span><strong>Cambios simples</strong><small>Política clara y rápida</small></span></div>
+  <a class="skip-link" href="#productos">Ir al catálogo</a>
+  <div class="announcement" data-page>Vista previa del catálogo <span>•</span> Precios y disponibilidad por confirmar</div>
+  <header class="header" data-page><div class="container header-main">
+    <a class="brand" href="#inicio" aria-label="SmartStore inicio"><span class="brand-mark">S</span><span>SMART<span>STORE</span></span></a>
+    <form class="search" id="searchForm" role="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" aria-label="Buscar productos" placeholder="Busca EZVIZ, batería, Tapo, sensor…" autocomplete="off"><button type="submit">Buscar</button></form>
+    <nav class="header-actions" aria-label="Tus productos"><button class="icon-btn" id="wishlistBtn" type="button" aria-label="Ver favoritos" aria-pressed="false">♡<span class="count" id="wishlistCount">0</span></button><button class="cart-button" id="cartBtn" type="button"><span>Mi lista</span><strong id="cartCount">0</strong></button></nav>
+  </div><nav class="container nav-row" aria-label="Secciones"><button class="categories-trigger" id="categoriesBtn" type="button">☰ Categorías</button><a href="#productos" data-category="interior">Interior</a><a href="#productos" data-category="exterior">Exterior</a><a href="#productos" data-category="bateria">A batería</a><a href="#productos" data-category="sensores">Sensores</a><a href="#guia">Cómo elegir</a></nav></header>
+  <main id="inicio" data-page>
+    <section class="hero"><div class="container hero-grid"><div class="hero-copy"><span class="eyebrow">TU PRIMER HOGAR INTELIGENTE</span><h1>Más tranquilidad.<br><em>Menos complicaciones.</em></h1><p>Cámaras y dispositivos para empezar en casa, con una explicación clara de lo que necesitas para instalarlos.</p><div class="hero-actions"><a class="btn primary" href="#productos">Explorar catálogo</a><a class="btn ghost" href="#guia">¿Cuál necesito? →</a></div><div class="trust-row"><span>EZVIZ</span><span>Tapo / TP-Link</span><span>SanDisk</span></div></div><div class="hero-visual"><div class="hero-card"><span class="live-dot"></span><span class="hero-card-kicker">ELIGE CON INFORMACIÓN</span><h2>Tu casa, conectada a tu manera.</h2><div class="device-preview"><div class="camera-lens"><span></span></div><div class="signal signal-a"></div><div class="signal signal-b"></div></div><div class="mini-stats"><div><strong>01</strong><small>Elige tu espacio</small></div><div><strong>02</strong><small>Revisa requisitos</small></div><div><strong>03</strong><small>Arma tu lista</small></div></div></div></div></div></section>
+    <section class="benefits"><div class="container benefits-grid"><div><b aria-hidden="true">⌂</b><span><strong>Pensado para tu hogar</strong><small>Interior, patio y acceso</small></span></div><div><b aria-hidden="true">ϟ</b><span><strong>Energía sin confusiones</strong><small>Enchufe o batería</small></span></div><div><b aria-hidden="true">⌘</b><span><strong>Requisitos visibles</strong><small>Wi-Fi, app y hub</small></span></div><div><b aria-hidden="true">↗</b><span><strong>Fuentes oficiales</strong><small>Ficha de cada fabricante</small></span></div></div></section>
+    <section class="section" id="categorias"><div class="container"><div class="section-head"><div><span class="eyebrow dark">EXPLORA POR NECESIDAD</span><h2>¿Qué quieres hacer más inteligente?</h2></div><a href="#productos" data-category="all">Ver todo →</a></div><div class="category-grid" id="categoryGrid"></div></div></section>
+    <section class="section soft" id="productos"><div class="container"><div class="section-head"><div><span class="eyebrow dark">CATÁLOGO PARA EMPEZAR</span><h2>Encuentra tu próximo dispositivo</h2></div><span class="catalog-label">Selección editorial · no es stock disponible</span></div>
+      <div class="catalog-filters"><label>Categoría<select id="categoryFilter"></select></label><label>Marca<select id="brandFilter"></select></label><label>Instalación<select id="installationFilter"></select></label><label class="favorite-check"><input type="checkbox" id="onlyFavorites"> Solo favoritos</label><button type="button" class="reset-button" data-reset>Limpiar</button></div>
+      <p id="searchStatus" class="search-status" role="status" aria-live="polite"></p><div class="product-grid" id="productGrid"></div>
+      <noscript>Activa JavaScript para ver el catálogo y utilizar los filtros. No hay compras habilitadas en esta vista previa.</noscript>
     </div></section>
-
-    <section class="section" id="categorias"><div class="container">
-      <div class="section-head"><div><span class="eyebrow dark">COMPRA POR CATEGORÍA</span><h2>Todo para conectar y proteger</h2></div><a href="#productos">Ver todo →</a></div>
-      <div class="category-grid" id="categoryGrid"></div>
-    </div></section>
-
-    <section class="section soft" id="productos"><div class="container">
-      <div class="section-head"><div><span class="eyebrow dark">DESTACADOS</span><h2>Los favoritos de nuestros clientes</h2></div><div class="product-toolbar"><button class="filter active" data-filter="all">Todos</button><button class="filter" data-filter="camaras">Cámaras</button><button class="filter" data-filter="domotica">Domótica</button><button class="filter" data-filter="acceso">Acceso</button></div></div>
-      <div id="searchStatus" class="search-status" hidden></div>
-      <div class="product-grid" id="productGrid"></div>
-    </div></section>
-
-    <section class="section" id="asesoria"><div class="container advisory">
-      <div><span class="eyebrow">¿NO SABES QUÉ NECESITAS?</span><h2>Armamos la solución contigo.</h2><p>Cuéntanos qué quieres proteger o automatizar y te ayudamos a elegir productos compatibles, sin comprar de más.</p></div>
-      <form id="advisoryForm"><input required placeholder="Tu nombre" /><input required type="tel" placeholder="WhatsApp" /><select><option>Quiero instalar cámaras</option><option>Quiero automatizar mi hogar</option><option>Necesito control de acceso</option><option>Necesito mejorar mi red</option></select><button class="btn light" type="submit">Solicitar asesoría</button></form>
-    </div></section>
-
-    <section class="section" id="empresas"><div class="container company-banner"><div><span>VENTA EMPRESAS</span><h2>Proyectos, instaladores y compras por volumen</h2><p>Precios especiales, facturación y atención comercial para negocios e instaladores.</p></div><button class="btn primary" id="businessBtn">Cotizar proyecto</button></div></section>
+    <section class="section" id="guia"><div class="container"><div class="section-head"><div><span class="eyebrow dark">ANTES DE ELEGIR</span><h2>Fácil de usar no significa lo mismo para todos.</h2></div></div><div class="guide-grid"><article><span>01 / CONEXIÓN</span><h3>Wi-Fi no significa sin cables</h3><p>Revisa la alimentación y la banda de red de cada modelo. Una cámara Wi-Fi puede necesitar un enchufe permanente.</p></article><article><span>02 / INSTALACIÓN</span><h3>Un lugar adecuado primero</h3><p>Comprueba la señal antes de fijar un soporte. Si necesitas trabajo en altura o modificar la instalación eléctrica, solicita ayuda profesional.</p></article><article><span>03 / COMPATIBILIDAD</span><h3>Piensa en el sistema completo</h3><p>Los sensores T1C, T2C y T10C de esta selección necesitan A3. Revisa también tarjetas, cargadores y paneles en la ficha oficial de cada equipo.</p></article><article><span>04 / USO DIARIO</span><h3>Sin falsas promesas de autonomía</h3><p>La batería y la carga solar dependen del uso y del entorno. Guarda las cámaras para espacios propios y revisa privacidad, contraseña y actualizaciones.</p></article></div></div></section>
+    <section class="section launch-section" id="estado"><div class="container company-banner"><div><span>ESTAMOS PREPARANDO LA TIENDA</span><h2>Primero, una selección bien hecha.</h2><p>Estas fichas permiten evaluar productos. Precios, existencias, distribución en Chile, pagos y despacho aún no están confirmados. Tu lista no genera pedidos ni envía datos personales.</p></div><a class="btn primary" href="#productos">Armar mi lista</a></div></section>
   </main>
-
-  <footer class="footer"><div class="container footer-grid"><div><a class="brand inverted" href="#inicio"><span class="brand-mark">S</span><span>SMART<span>STORE</span></span></a><p>Tecnología útil, soporte real y compra simple.</p></div><div><strong>Tienda</strong><a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#ofertas">Ofertas</a></div><div><strong>Ayuda</strong><a href="#soporte">Centro de ayuda</a><a href="#envios">Despachos</a><a href="#cambios">Cambios y garantía</a></div><div><strong>Newsletter</strong><p>Ofertas y lanzamientos, sin spam.</p><form id="newsletterForm" class="newsletter"><input type="email" required placeholder="tu@email.cl"/><button>→</button></form></div></div><div class="container footer-bottom"><span>© 2026 SmartStore. Marca temporal.</span><span>Chile · CLP</span></div></footer>
-
-  <aside class="drawer" id="cartDrawer" aria-hidden="true"><div class="drawer-head"><div><small>TU COMPRA</small><h3>Carrito</h3></div><button class="close-btn" data-close="cartDrawer">×</button></div><div class="drawer-body" id="cartItems"></div><div class="drawer-footer" id="cartFooter"></div></aside>
-  <aside class="drawer left" id="categoryDrawer" aria-hidden="true"><div class="drawer-head"><div><small>EXPLORAR</small><h3>Categorías</h3></div><button class="close-btn" data-close="categoryDrawer">×</button></div><div class="drawer-body" id="categoryMenu"></div></aside>
+  <footer class="footer" data-page><div class="container footer-grid"><div><a class="brand inverted" href="#inicio"><span class="brand-mark">S</span><span>SMART<span>STORE</span></span></a><p>Un hogar conectado empieza por elegir bien.</p></div><div><strong>Explorar</strong><a href="#categorias">Categorías</a><a href="#productos">Catálogo</a></div><div><strong>Antes de comprar</strong><a href="#guia">Guía de elección</a><a href="#estado">Estado de la tienda</a></div><div><strong>Información de producto</strong><p>Revisión: 7 de octubre de 2026. Fichas e imágenes de los fabricantes; prestaciones y presentación sujetas a la variante regional. Sin afiliación declarada.</p></div></div><div class="container footer-bottom"><span>© 2026 SmartStore · Marca provisional</span><span id="catalogVersion">Catálogo 0.2</span></div></footer>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true" inert><div class="drawer-head"><div><small>SIN COMPROMISO DE COMPRA</small><h3 id="cartTitle">Mi selección</h3></div><button type="button" class="close-btn" data-close aria-label="Cerrar lista">×</button></div><div class="drawer-body" id="cartItems"></div><div class="drawer-footer" id="cartFooter"></div></aside>
+  <aside class="drawer left" id="categoryDrawer" role="dialog" aria-modal="true" aria-labelledby="categoryTitle" aria-hidden="true" inert><div class="drawer-head"><div><small>EXPLORAR</small><h3 id="categoryTitle">Categorías</h3></div><button type="button" class="close-btn" data-close aria-label="Cerrar categorías">×</button></div><div class="drawer-body" id="categoryMenu"></div></aside>
   <div class="backdrop" id="backdrop"></div>
-
-  <div class="modal" id="productModal" aria-hidden="true"><div class="modal-card"><button class="close-btn modal-close" data-close="productModal">×</button><div id="modalContent"></div></div></div>
-  <div class="toast-stack" id="toastStack" aria-live="polite"></div>
-
-  <script type="module" src="./app.js"></script>
-</body>
-</html>
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productTitle" aria-hidden="true" inert><div class="modal-card"><button class="close-btn modal-close" type="button" data-close aria-label="Cerrar ficha">×</button><div id="modalContent"></div></div></div>
+  <div class="toast-stack" id="toastStack" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js?v=0.2.0"></script>
+</body></html>
